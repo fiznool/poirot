@@ -1,0 +1,24 @@
+{
+  "name": "poirot",
+  "version": "0.0.0",
+  "private": true,
+  "description": "A simple repo to showcase private repository deployment.",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "bash deploy/setup-ssh.sh",
+    "postinstall": "bash deploy/cleanup-ssh.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fiznool/poirot.git"
+  },
+  "author": "Tom Spencer <fiznool@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fiznool/poirot/issues"
+  },
+  "homepage": "https://github.com/fiznool/poirot#readme",
+  "dependencies": {
+    "private-parts": "git@bitbucket.org:bigbluebananas/private-parts.git"
+  }
+}
